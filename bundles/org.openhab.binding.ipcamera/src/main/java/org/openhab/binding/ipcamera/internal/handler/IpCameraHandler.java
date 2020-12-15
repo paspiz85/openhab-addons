@@ -889,8 +889,6 @@ public class IpCameraHandler extends BaseThingHandler {
         if (rtspUri.toLowerCase().contains("rtsp")) {
             if (inputOptions.isEmpty()) {
                 inputOptions = "-rtsp_transport tcp";
-            } else {
-                inputOptions = inputOptions + " -rtsp_transport tcp";
             }
         }
 
