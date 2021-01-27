@@ -525,6 +525,7 @@ Import-Package: \\
           <artifactId>spotless-maven-plugin</artifactId>
           <version>${spotless.version}</version>
           <configuration>
+            <skip>true</skip>
             <java>
               <eclipse>
                 <file>openhab_codestyle.xml</file>
