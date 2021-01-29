@@ -26,6 +26,7 @@
     <module>org.openhab.io.openhabcloud</module>
     <module>org.openhab.io.transport.modbus</module>
     <module>org.openhab.io.mqttembeddedbroker</module>
+    <module>org.openhab.io.webapp</module>
     <module>org.openhab.io.webaudio</module>
     <!-- transformations -->
     <module>org.openhab.transform.bin2json</module>

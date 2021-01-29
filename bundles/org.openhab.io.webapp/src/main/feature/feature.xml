@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<features name="org.openhab.io.webapp-${project.version}" xmlns="http://karaf.apache.org/xmlns/features/v1.4.0">
+	<repository>mvn:org.openhab.core.features.karaf/org.openhab.core.features.karaf.openhab-core/${ohc.version}/xml/features</repository>
+
+	<feature name="openhab-io-webapp" description="Web App Support" version="${project.version}">
+		<feature>openhab-runtime-base</feature>
+		<feature>openhab-transport-http</feature>
+		<configfile finalname="${openhab.conf}/misc/webapp.js" override="false">mvn:${project.groupId}/openhab-addons-external/${project.version}/cfg/webapp.js</configfile>
+		<bundle>mvn:org.openhab.addons.bundles/org.openhab.io.webapp/${project.version}</bundle>
+	</feature>
+</features>
